@@ -1,0 +1,52 @@
+@media (max-width: 941px) {
+	.container-card{
+		flex-direction: column !important;
+		width: 100% !important;
+	}
+
+	.precios{
+		height: 250vh;
+
+		&-card{
+			width: 100% !important;
+			flex-direction: column !important;
+
+			&__card{
+				margin: 20px !important;
+			}
+		}
+	}
+
+	.contact{
+		flex-direction: column !important;
+		margin-top: 250px;
+	}
+}
+
+@media (max-width: 425px) {
+	.header__title{
+		text-align: center;
+	}
+
+	.card{
+		width: 90% !important;
+	}
+
+	.precios{
+		height: 350vh;
+
+		&-card__card{
+			width: 70%;
+			height: 90vh;
+		}	
+	}
+
+	.contact-reserve{
+		width: 80%;
+		height: 90vh;
+	}
+
+	.form{
+		width: 400px !important;
+	}
+}

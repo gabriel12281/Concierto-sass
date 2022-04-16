@@ -1,0 +1,11 @@
+.footer{
+	width: 100%;
+	@include dflex(center, center, column);
+	background: $dark;
+	color: $ligth;
+	padding: 20px;
+}
+
+.footer__text{
+	margin-bottom: 20px;
+}

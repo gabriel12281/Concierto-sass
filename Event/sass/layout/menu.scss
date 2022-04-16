@@ -1,0 +1,23 @@
+
+.menu{
+	@include dflex(space-between, center);
+	width: 100%;
+	height: 10vh;
+	padding: 30px;
+	position: fixed;
+	background: #fff;
+	top: 0;
+
+	&-logo__logo{
+		margin-left: 30px;
+	}
+
+	&__btn{
+		@include button($secondary, 140px);
+		transition: background .6s;
+
+		&:hover{
+			background: #bf3017;
+		}
+	}
+}

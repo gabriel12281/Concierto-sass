@@ -1,0 +1,26 @@
+@mixin button($bg, $width, $display: block, $br: 8px, $padding: 10px){
+	background: $bg;
+	color: #fff;
+	padding: $padding;
+	text-align: center;
+	border-radius: $br;
+	display: $display;
+	width: $width;
+	font-weight: map-get($font-weight, "bold");
+}
+
+@mixin dflex($jf, $ai, $fd: row, $nowrap: nowrap){
+	display: flex;
+	justify-content: $jf;
+	align-items: $ai;
+	flex-direction: $fd;
+	flex-wrap: $nowrap;
+}
+
+@mixin card($width, $height, $al: center, $bg:none){
+	background-color: $bg;
+	text-align: $al;
+	padding: 20px;
+	width: $width;
+	height: $height;
+}

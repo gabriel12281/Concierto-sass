@@ -1,0 +1,163 @@
+.cantantes{
+	&__title{
+		text-align: center;
+		color: #54595f;
+		font-size: 50px;
+		letter-spacing: 4px;
+		margin-bottom: 100px;
+	}
+
+	.container-card{
+		width: 85%;
+		margin: 0 auto;
+		@include dflex(center, center);
+		margin-bottom: 150px;
+	}
+
+	.card{
+		box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+		@include card(35%, 500px, none, none);
+		@include dflex(center, center, column);
+		margin: 20px;
+		padding: 16px;
+
+		&__img{
+			height: 250px;
+			object-fit: cover;
+			width: 80%;
+			border-radius:10px;
+			cursor: pointer;
+		}
+
+		&__title{
+			font-weight: map-get($font-weight, "normal");
+			font-size: 23px;
+			margin-bottom: 20px;
+		}
+
+		&__text{
+			color: #686873;
+		}
+	}
+}
+
+.precios{
+	background: url("../img/pattern.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 110vh;
+
+	&__title{
+		color: #fff;
+		text-align: center;
+		font-size: 50px;
+		padding: 40px;
+	}
+
+	&-card{
+		@include dflex(space-around, center);
+		width: 90%;
+		margin: 40px auto;
+
+		&__card{
+			padding: 20px;
+			border: 2px #dbdbdb solid;
+			@include card(25%, 70vh, center, #fff);
+			@include dflex(space-around, center, column);
+		}
+
+		&__title{
+			color: #54595f;
+			font-size: 25px;
+			letter-spacing: 2px;
+			margin-top: 70px;
+			width: 100%;
+			border-bottom: 1px solid #ccc;
+			padding: 10px;
+		}
+
+		&__precio{
+			font-size: 40px;
+			margin-top: 60px;
+			color: $secondary;
+		}
+
+		&__btn{
+			color: #686873;
+			width: 100%;
+			padding: 20px;
+			text-align: center;
+			font-weight: map-get($font-weight, "bold");
+			margin-top: 100px;
+			border: 1px solid $secondary;
+			transition: all .6s;
+
+			&:hover{
+				color: #fff;
+				background-color:$secondary;
+			}
+		}
+	}
+}
+
+.contact{
+	@include dflex(space-around, center);
+	width: 100%;
+	margin-top: 50px;
+
+	&-reserve{
+		@include dflex(center, none, column);
+		@include card(40%, 70vh, left, #fff);
+		box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+		padding: 50px;
+		height: 90vh;
+		margin-bottom: 40px;
+
+		&__img{
+			width:100%;
+			margin: 40px 0px;
+			border-radius:10px;
+		}
+
+		&__text{
+			margin-top: 40px;
+		}
+	}
+
+	.form{
+		@include dflex(space-between, none, column);
+		padding: 10px;
+		width: 500px;
+
+		&__label{
+			color: #686873;
+			margin-bottom: 15px;
+
+			& span{
+				color:red;
+			}
+		}
+
+		&__input{
+			padding: 10px;
+			margin: 20px;
+			border: 2px solid #DCDFE1;
+			outline: none;
+			transition: border .6s;
+
+			&:focus{
+				border: 1px solid $secondary;
+			}
+
+			&--btn{
+				@include button($dark, 30%, inline-block);
+				margin: 0 auto;
+				transition: background .6s;
+
+					&:hover{
+						background: $secondary;
+					}
+			}
+		}
+	}
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Event</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="./css/styles.css">
+	</head>
+	<body>
+		<div class="container">
+			<nav class="menu">
+				<div class="menu-logo">
+					<h3 class="menu-logo__logo">Concierto</h3>
+				</div>
+				<div class="menu-btn"><a href="#" class="menu__btn">Login</a></div>
+			</nav>
+			<header class="header">
+				<h3 class="header__date">21 de noviembre</h3>
+				<h1 class="header__title">El mejor concierto de la historia</h1>
+				<div class="header__btn">
+					<a href="#" class="header__btn--buy">Buy Ticket</a>
+					<span class="header__span">Or</span>
+					<a href="#" class="header__btn--more">Learn More</a>
+				</div>
+			</header>
+			<main class="content">
+				<section class="cantantes">
+					<h2 class="cantantes__title">Cantantes</h2>
+					<div class="container-card">
+						<div class="card">
+							<img src="./img/artista1.jpg" alt="" class="card__img">
+							<h4 class="card__title">Bad Bunny</h4>
+							<p class="card__text">cantante del día 1</p>
+						</div>
+						<div class="card">
+							<img src="./img/artista2.jpg" alt="" class="card__img">
+							<h4 class="card__title">J Balvin</h4>
+							<p class="card__text">cantante del día 2</p>
+						</div>
+						<div class="card">
+							<img src="./img/artista3.webp" alt="" class="card__img">
+							<h4 class="card__title">Maluma</h4>
+							<p class="card__text">cantante del día 3</p>
+						</div>
+					</div>
+				</section>
+				<section class="precios">
+					<h2 class="precios__title">Precios</h2>
+					<div class="precios-card">
+						<div class="precios-card__card">
+							<h4 class="precios-card__title">Dia 1</h4>
+							<h3 class="precios-card__precio">$  150</h3>
+							<a href="#" class="precios-card__btn">Get Ticket</a>
+						</div>
+						<div class="precios-card__card">
+							<h4 class="precios-card__title">Dia 2</h4>
+							<h3 class="precios-card__precio">$  100</h3>
+							<a href="#" class="precios-card__btn">Get Ticket</a>
+						</div>
+						<div class="precios-card__card">
+							<h4 class="precios-card__title">Dia 3</h4>
+							<h3 class="precios-card__precio">$  50</h3>
+							<a href="#" class="precios-card__btn">Get Ticket</a>
+						</div>
+					</div>
+				</section>
+				<section class="contact">
+					<div class="contact-reserve">
+						<img src="./img/room.jpg" alt="room" class="contact-reserve__img">
+						<h2 class="contact-reserve__title">Reserve your place now</h2>
+						<p class="contact-reserve__text">Lorem ipsum dolor sit amet, consectetur adipisicing, elit. Vel inventore aliquid commodi exercitationem, maxime animi reiciendis neque ipsam, dolorem. Cum ex modi facilis iusto corrupti, temporibus blanditiis repellendus, officia eius?</p>
+					</div>
+					<div class="contact-form">
+						<form class="form">
+							<label for="nombre" class="form__label">Your Name <span>*</span></label>
+							<input type="text" name="nombre" class="form__input" placeholder="nombre">
+							<label for="telefono" class="form__label">Your Phone <span>*</span></label>
+							<input type="text" name="telefono" class="form__input" placeholder="telefono">
+							<label for="email" class="form__label">Your Email <span>*</span></label>
+							<input type="email" name="email" class="form__input" placeholder="email">
+							<input type="submit" value="Submit" class="form__input form__input--btn">
+						</form>
+					</div>
+				</section>
+			</main>
+			<footer class="footer">
+				<p class="footer__text">
+					Design By Gabriel Acero
+				</p>
+				<p class="footer__copy">
+					Gabriel Acero 2022 &copy;
+				</p>
+			</footer>
+		</div>
+	</body>
+</html>

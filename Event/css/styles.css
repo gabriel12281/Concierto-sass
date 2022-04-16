@@ -1,0 +1,366 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 900;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+  padding: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+img {
+  width: 100%;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 10vh;
+  padding: 30px;
+  position: fixed;
+  background: #fff;
+  top: 0;
+}
+.menu-logo__logo {
+  margin-left: 30px;
+}
+.menu__btn {
+  background: #eb3d1e;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px;
+  display: block;
+  width: 140px;
+  font-weight: 900;
+  transition: background 0.6s;
+}
+.menu__btn:hover {
+  background: #bf3017;
+}
+
+.header {
+  background: url("../img/audiencia.jpg");
+  width: 100%;
+  height: 130vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 70px;
+}
+.header__date, .header__title {
+  color: #fff;
+  margin-bottom: 15px;
+}
+.header__btn--buy {
+  background: #eb3d1e;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px;
+  display: inline-block;
+  width: 140px;
+  font-weight: 900;
+}
+.header__btn--more {
+  background: #000;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px;
+  display: inline-block;
+  width: 140px;
+  font-weight: 900;
+}
+.header__span {
+  background: #062863;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  border-radius: 50%;
+  display: inline-block;
+  width: 40px;
+  font-weight: 900;
+  z-index: 2;
+  position: absolute;
+  left: 48.5%;
+  cursor: pointer;
+}
+
+.cantantes__title {
+  text-align: center;
+  color: #54595f;
+  font-size: 50px;
+  letter-spacing: 4px;
+  margin-bottom: 100px;
+}
+.cantantes .container-card {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-bottom: 150px;
+}
+.cantantes .card {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: none;
+  text-align: none;
+  padding: 20px;
+  width: 35%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin: 20px;
+  padding: 16px;
+}
+.cantantes .card__img {
+  height: 250px;
+  object-fit: cover;
+  width: 80%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.cantantes .card__title {
+  font-weight: 500;
+  font-size: 23px;
+  margin-bottom: 20px;
+}
+.cantantes .card__text {
+  color: #686873;
+}
+
+.precios {
+  background: url("../img/pattern.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 110vh;
+}
+.precios__title {
+  color: #fff;
+  text-align: center;
+  font-size: 50px;
+  padding: 40px;
+}
+.precios-card {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 90%;
+  margin: 40px auto;
+}
+.precios-card__card {
+  padding: 20px;
+  border: 2px #dbdbdb solid;
+  background-color: #fff;
+  text-align: center;
+  padding: 20px;
+  width: 25%;
+  height: 70vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.precios-card__title {
+  color: #54595f;
+  font-size: 25px;
+  letter-spacing: 2px;
+  margin-top: 70px;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+}
+.precios-card__precio {
+  font-size: 40px;
+  margin-top: 60px;
+  color: #eb3d1e;
+}
+.precios-card__btn {
+  color: #686873;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  font-weight: 900;
+  margin-top: 100px;
+  border: 1px solid #eb3d1e;
+  transition: all 0.6s;
+}
+.precios-card__btn:hover {
+  color: #fff;
+  background-color: #eb3d1e;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  margin-top: 50px;
+}
+.contact-reserve {
+  display: flex;
+  justify-content: center;
+  align-items: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  background-color: #fff;
+  text-align: left;
+  padding: 20px;
+  width: 40%;
+  height: 70vh;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 50px;
+  height: 90vh;
+  margin-bottom: 40px;
+}
+.contact-reserve__img {
+  width: 100%;
+  margin: 40px 0px;
+  border-radius: 10px;
+}
+.contact-reserve__text {
+  margin-top: 40px;
+}
+.contact .form {
+  display: flex;
+  justify-content: space-between;
+  align-items: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 10px;
+  width: 500px;
+}
+.contact .form__label {
+  color: #686873;
+  margin-bottom: 15px;
+}
+.contact .form__label span {
+  color: red;
+}
+.contact .form__input {
+  padding: 10px;
+  margin: 20px;
+  border: 2px solid #DCDFE1;
+  outline: none;
+  transition: border 0.6s;
+}
+.contact .form__input:focus {
+  border: 1px solid #eb3d1e;
+}
+.contact .form__input--btn {
+  background: #000;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px;
+  display: inline-block;
+  width: 30%;
+  font-weight: 900;
+  margin: 0 auto;
+  transition: background 0.6s;
+}
+.contact .form__input--btn:hover {
+  background: #eb3d1e;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  background: #000;
+  color: #fff;
+  padding: 20px;
+}
+
+.footer__text {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 941px) {
+  .container-card {
+    flex-direction: column !important;
+    width: 100% !important;
+  }
+
+  .precios {
+    height: 250vh;
+  }
+  .precios-card {
+    width: 100% !important;
+    flex-direction: column !important;
+  }
+  .precios-card__card {
+    margin: 20px !important;
+  }
+
+  .contact {
+    flex-direction: column !important;
+    margin-top: 250px;
+  }
+}
+@media (max-width: 425px) {
+  .header__title {
+    text-align: center;
+  }
+
+  .card {
+    width: 90% !important;
+  }
+
+  .precios {
+    height: 350vh;
+  }
+  .precios-card__card {
+    width: 70%;
+    height: 90vh;
+  }
+
+  .contact-reserve {
+    width: 80%;
+    height: 90vh;
+  }
+
+  .form {
+    width: 400px !important;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
